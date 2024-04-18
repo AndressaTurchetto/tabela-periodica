@@ -64,71 +64,64 @@ table {
     font-size: 18px;
 }
 
+:root {
+    --cor1:#05dae2;
+    --cor2:#5BBCFF;
+    --cor3:#ed75e9;
+    --cor4: #FC819E;
+    --cor5: #FEC7B4;
+    --cor6:#FFF3C7;
+    --cor7:#f36d4a;
+    --cor8:#59cf6e;
+    --cor9:#F7418F;
+    --cor10:#859998;
+    --cor11:#0D9276;
+}
+
 .color1 {
-    background-color: #05dae2;
+    background-color: var(--cor1);
 }
 
 .color2 {
-    background-color: #1b67c9;
+    background-color: var(--cor2);
 }
 
 .color3 {
-    background-color: #a1669f;
+    background-color: var(--cor3);
 }
 
 .color4 {
-    background-color: #004e75;
+    background-color: var(--cor4);
 }
 
 .color5 {
-    background-color: #f53951;
+    background-color: var(--cor5);
 }
 
 .color6 {
-    background-color: #f5b659;
+    background-color: var(--cor6);
 }
 
 .color7 {
-    background-color: #f36d4a;
+    background-color: var(--cor7);
 }
 
 .color8 {
-    background-color: #59cf6e;
+    background-color: var(--cor8);
 }
 
 .color9 {
-    background-color: #329090;
-    
-    
+    background-color: var(--cor9); 
 }
 
 .color10{
-    background-color: #562d56;
+    background-color: var(--cor10);
 }
 
 .color11{
-    background-color: #859998;
+    background-color: var(--cor11);
 }
 
-/* Flickering animation */
-@keyframes flicker {
-    0%, 17%, 33%, 50%, 66%, 83%, 100% {
-  
-        text-shadow:
-        0 0 5px #fff,
-        0 0 10px #0fa,
-        0 0 20px #0fa,
-        0 0 40px #0fa,
-        0 0 70px #0fa,
-        0 0 110px #0fa,
-        0 0 160px #0fa
-    }
-    
-    20%, 40%, 60%, 80% {        
-        text-shadow: none;
-    }    
-}
-  
 td:hover {
     filter: brightness(200%);
     color: black;
